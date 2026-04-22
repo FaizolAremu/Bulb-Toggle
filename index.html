@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bulb Toggle</title>
+</head>
+<body>
+
+
+  <img id="bulbOff" src="./pic_bulboff.gif" width="150">
+
+  <img id="bulbOn" src="./pic_bulbon.gif" width="150" style="display: none;">
+
+  <br><br>
+
+  <button id="onBtn">Turn On</button>
+  <button id="offBtn">Turn Off</button>
+
+  
+
+</body>
+
+<script>
+
+    onBtn.addEventListener("click", () => {
+      bulbOn.style.display = "block";
+      bulbOff.style.display = "none";
+    });
+
+    offBtn.addEventListener("click", () => {
+      bulbOn.style.display = "none";
+      bulbOff.style.display = "block";
+    });
+  </script>
+</html>
